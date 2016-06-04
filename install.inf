@@ -1,0 +1,10 @@
+[info]
+title=SynLint
+desc=Syntax-checking of source code (see readme file)
+type=py-plugin
+subdir=syn_lint
+
+[ini]
+section=Commands
+id=SynLint
+params=run;;Alt+L;
