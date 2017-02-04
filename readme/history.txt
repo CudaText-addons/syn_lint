@@ -1,4 +1,7 @@
 
+2017.02.04
+- don't use deleted APIs
+
 1.0.3
 - fix: new Synw
 

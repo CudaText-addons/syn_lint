@@ -540,7 +540,7 @@ class Linter(metaclass=LinterMeta):
 
         app_log(LOG_SET_PANEL, LOG_PANEL_VALIDATE)
         app_log(LOG_CLEAR, '')
-        self.view.set_bk(BK_CLEAR, 0)
+        self.view.bookmarks(BM_DELETE_ALL, 0, 0)
 
         if not output:
             return 0
@@ -594,7 +594,7 @@ class Linter(metaclass=LinterMeta):
                 error_count += 1
 
             for line in bk:
-                self.view.set_bk(BK_SET_UNNUM, bk[line][0], bk[line][1], bk[line][2], '! ' + bk[line][3])
+                self.view.bookmarks(BM_ADD, bk[line][0], 0, bk[line][1], bk[line][2], '! ' + bk[line][3])
 
         return error_count
 
