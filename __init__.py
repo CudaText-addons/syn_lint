@@ -43,8 +43,7 @@ class Command:
                     return
         else:
             if show_panel:
-                sw.msg_status('No linters installed for "%s"' % lexer)
-                sw.msg_box(sw.BEEP_INFO)
+                sw.msg_status('No linters for lexer "%s"' % lexer)
 
     def on_open(self, ed_self):
         self.do_lint(ed_self)
